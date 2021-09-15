@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>淘宝-轮播图</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        .viewpager{
+            width: 520px;
+            height: 280px;
+            margin: 100px auto;
+            position: relative;
+        }
+        .img-list li{
+            position: absolute;
+        }
+        .img-list li:nth-child(1){
+            z-index: 3;
+        }
+        .viewpager-iconfont{
+            display: block;
+            /* float: left; */
+            bottom: 10px;
+            left: 40%;
+            z-index: 9999;
+            position: absolute;
+            /* margin: 0 auto; */
+            background-color: rgba(255, 255, 255, .3);
+            border-radius: 3px;
+        }
+        .viewpager-iconfont i{
+            /* z-index: 100; */
+            /* display: block; */
+            width: 10px;
+            height: 10px;
+            margin: 0 5px;
+            float: left;
+            /* position: absolute; */
+            bottom: 10px;
+            background-color: rgba(255, 255, 255);
+            border-radius: 50%;
+
+        }
+        .viewpager-iconfont .active,
+        .viewpager-iconfont i:hover{
+            background-color: #ff5000;
+        }
+    </style>
+</head>
+<body>
+    <div class="viewpager">
+        <div class="img-list">
+            <ul>
+                <li class="img-li-1"><a href="javascript:;" class="img-a-1"><img src="./img/05/taobao-1.png" alt="" class="img-1"></a></li>
+                <li class="img-li-2"><a href="javascript:;" class="img-a-2"><img src="./img/05/taobao-2.jpg" alt="" class="img-2"></a></li>
+                <li class="img-li-3"><a href="javascript:;" class="img-a-3"><img src="./img/05/taobao-3.jpg" alt="" class="img-3"></a></li>
+                <li class="img-li-4"><a href="javascript:;" class="img-a-4"><img src="./img/05/taobao-4.jpg" alt="" class="img-4"></a></li>
+                <li class="img-li-5"><a href="javascript:;" class="img-a-5"><img src="./img/05/taobao-5.jpg" alt="" class="img-5"></a></li>
+            </ul>
+        </div>
+        <div class="viewpager-iconfont">
+            <i class="active"></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+        </div>
+    </div>
+</body>
+</html>

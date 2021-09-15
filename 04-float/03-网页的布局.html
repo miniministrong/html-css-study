@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>网页的布局</title>
+    <style>
+        header, main, footer{
+            width: 1000px;
+            margin: 0 auto;
+        }
+        header{
+            height: 200px;
+            background-color: greenyellow;
+        }
+        main{
+            height: 500px;
+            background-color: yellow;
+            margin: 10px auto;
+        }
+        nav, article, aside{
+            float: left;
+            height: 100%;
+        }
+        nav{
+            width: 190px;
+            background-color: red;
+        }
+        article{
+            width: 600px;
+            background-color: royalblue;
+            margin: 0 10px;
+        }
+        aside{
+            width: 190px;
+            background-color: seagreen;
+        }
+        footer{
+            height: 200px;
+            background-color: violet;
+        }
+    </style>
+</head>
+<body>
+    <!-- 头部 -->
+    <header></header>
+    <!-- 主体 -->
+    <main>
+        <!-- 左边 -->
+        <nav></nav>
+        <!-- 中间 -->
+        <article></article>
+        <!-- 右边 -->
+        <aside></aside>
+    </main>
+    <!-- 尾部 -->
+    <footer></footer>
+</body>
+</html>

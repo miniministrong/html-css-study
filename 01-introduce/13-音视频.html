@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>13-音视频</title>
+</head>
+<body>
+    <!-- 
+        audio标签：用来向页面中引入一个外部的音频文件的
+        音视频文件引入时，默认情况下不允许用户自己控制播放停止
+
+        属性：
+            controls：是否允许用户控制播放
+            autoplay：音频文件是否自动播放
+                - 如果设置了autoplay 则音乐在打开页面时音乐会自动播放
+                    但是目前来讲大部分浏览器都不会自动对音乐进行播放
+            loop：音乐是否循环播放
+     -->
+    <!-- <audio src="./source/Fleurie,Ruslan - Take Me With You.mp3" controls autoplay></audio> -->
+
+    <!-- 除了通过src来指定外部文件的路径以外，还可以通过source来制定文件的路径 -->
+    <audio controls>
+        <!-- 对不起，您的浏览器不支持播放音频！请升级浏览器！ -->
+        <source src="./source/audio.mp3">
+        <source src="./source/audio.ogg">
+        <embed src="./source/audio.mp3" type="audio/mp3" width="300" height="100">
+    </audio>
+    <br><br>
+    <!-- 
+        使用video标签向网页中引入一个视频文件
+            - 使用方式和audio基本上是一样的
+     -->
+    <video controls>
+        <source src="./source/flower.webm">
+        <embed src="./source/flower.mp4" type="video/mp4">
+    </video>
+    <br><br>
+    <iframe src="https://open.iqiyi.com/developer/player_js/coopPlayerIndex.html?vid=02f2682741d8929affb5ac99cfaa23b8&tvId=5848290383661000&accessToken=2.ef9c39d6c7f1d5b44768e38e5243157d&appKey=8c634248790d4343bcae1f66129c1010&appId=1368&height=100%&width=100%" frameborder="0" allowfullscreen="true" width="500" height="300"></iframe>
+</body>
+</html>

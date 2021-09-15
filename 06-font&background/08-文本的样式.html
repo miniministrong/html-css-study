@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文本的样式</title>
+    <style>
+        .box1{
+            font-size: 50px;
+            /* 
+                text-decoration：设置文本修饰
+                - none：什么都没有
+                - underline：下划线
+                - line-through：删除线
+                - overline：上划线
+            */
+            text-decoration: underline red dotted;
+        }
+        .box2{
+            width: 200px;
+            /* 
+                white-space：设置网页如何处理空白
+                - normal：正常
+                - nowrap：不换行
+                - pre：保留空白
+            */
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+<body>
+    <div class="box2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam a sint labore velit fugiat ad numquam dolore, nobis laudantium aut voluptas sapiente voluptatem! Accusantium, fuga! Nisi perferendis obcaecati deserunt inventore.
+    </div>
+    <div class="box1">
+        今天天气真不错
+    </div>
+</body>
+</html>

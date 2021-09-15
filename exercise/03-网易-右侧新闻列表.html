@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>网易-右侧新闻列表</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        .nav-car{
+            width: 300px;
+            height: 324px;
+            margin: 50px auto;
+            background-color: aquamarine;
+            overflow: hidden;
+            font-family: 宋体;border-top: 1px #dddddd solid;
+        }
+        .car-title{
+            width: 300px;
+            height: 40px;
+            margin-top: -10px;
+        }
+        .car-title a{
+            font-size: 16px;
+            font-weight: bold;
+            border-top: 1px red solid;
+            display: inline-block;
+            margin-top: 0px;
+            font-family: "Microsoft YaHei", 微软雅黑, 微软雅黑, 宋体, sans-serif;
+            margin: 10px 0;
+        }
+        a{
+            text-decoration: none;
+            color: #404040;
+            line-height: 1.5;
+        }
+        a:hover{
+            color: red;
+        }
+        /* .nav-car-img{
+            width: 300px;
+            height: 150px;
+        } */
+        .img-bg h3{
+            font-size: 14px;
+            color: #fff;
+            height: 40px;
+            line-height: 40px;
+            display: block;
+            position: absolute;
+            width: 300px;
+            background: url(http://static.ws.126.net/f2e/news/index2016/images/sprite_icon0813_v1.png) no-repeat 12px -125px;
+        }
+        .img-bg{
+            margin-top: -40px;
+        }
+        h3{
+            display: block;
+            padding-left: 40px;
+            font-weight: bold;
+            font-family: "Microsoft YaHei", 微软雅黑, 微软雅黑, 宋体, sans-serif;
+        }
+        ul{
+            margin-top: 45px;
+        }
+        li{
+            cursor: pointer;
+            font-size: 14px;
+            height: 25px;
+            /* padding-left: 20px; */
+        }
+        li::before{
+            content: "■";
+            color:rgb(218, 218, 218);
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-car">
+        <div class="car-title">
+            <h2 class="title">
+                <a href="javascript:;">汽车精选</a>
+            </h2>
+        </div>
+        <div class="nav-car-img">
+            <a href="javascript:;">
+                <img src="./img/03/03-car.jpg" alt="">
+                <div class="img-bg">
+                    <h3>电动科迈罗:霸天虎等等 我先充电</h3>
+                </div>
+            </a>
+        </div>
+        <div class="nav-car-news">
+            <ul>
+                <li>
+                    <a href="javascript:;">
+                        福特新款福克斯曝光 动力或回归四缸
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        近20万的涨幅是官方给的 新款G500售182万
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        丰田发布Supra特别版 增专属车漆/配置
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        要运动性还是运动化？这确实是个问题
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

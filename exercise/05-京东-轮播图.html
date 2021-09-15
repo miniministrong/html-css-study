@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>京东-轮播图</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        .viewpager {
+            width: 590px;
+            height: 470px;
+            /* overflow: hidden; */
+            margin: 100px auto;
+            /* 
+                为div开启相对定位，目的是使div中的nav-iconfont可以
+                    相对于div定位而不是相对于初始包含块定位 
+            */
+            position: relative;
+        }
+        .imgs li{
+            position: absolute;
+        }
+        .imgs li:nth-child(1){
+            z-index: 1;
+        }
+        img {
+            width: 590px;
+        }
+        .nav-iconfont{
+            position: absolute;
+            z-index: 9999;
+            bottom: 10px;
+            left: 40px;
+        }
+        .nav-iconfont i{
+            width: 10px;
+            height: 10px;
+            float: left;
+            margin: 0 5px;
+            border-radius: 50%;
+            /* color: white; */
+            /* background-color: red; */
+            background-color: rgba(255, 255, 255, .6);
+            /* 
+                将背景颜色值设置到内容区，边框和内边距不再有背景颜色
+            */
+            background-clip: content-box;
+            border: 2px solid transparent;
+        }
+        .nav-iconfont .active,
+        .nav-iconfont :hover{
+            background-color: #fff;
+            border: 2px solid rgba(255, 255, 255, .3);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="viewpager">
+        <div class="imgs">
+            <ul>
+                <li class="img-1">
+                    <a href="#">
+                        <img src="./img/05/1.jpg" alt="">
+                    </a>
+                </li>
+                <li class="img-2">
+                    <a href="#">
+                        <img src="./img/05/2.jpg" alt="">
+                    </a>
+                </li>
+                <li class="img-3">
+                    <a href="#">
+                        <img src="./img/05/3.jpg" alt="">
+                    </a>
+                </li>
+                <li class="img-4">
+                    <a href="#">
+                        <img src="./img/05/4.jpg" alt="">
+                    </a>
+                </li>
+                <li class="img-5">
+                    <a href="#">
+                        <img src="./img/05/5.jpg" alt="">
+                    </a>
+                </li>
+                <li class="img-6">
+                    <a href="#">
+                        <img src="./img/05/6.jpg" alt="">
+                    </a>
+                </li>
+                <li class="img-7">
+                    <a href="#">
+                        <img src="./img/05/7.jpg" alt="">
+                    </a>
+                </li>
+                <li class="img-8">
+                    <a href="#">
+                        <img src="./img/05/8.jpg" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-iconfont">
+            <i class="icon1 active"></i>
+            <i class="icon2"></i>
+            <i class="icon3"></i>
+            <i class="icon4"></i>
+            <i class="icon5"></i>
+            <i class="icon6"></i>
+            <i class="icon7"></i>
+            <i class="icon8"></i>
+        </div>
+    </div>
+</body>
+
+</html>
